@@ -2,11 +2,9 @@ let signIn = document.getElementById("Sign-in");
 let signUp = document.getElementById("Sign-Up");
 let h3 = document.getElementById("sign");
 let para1 = document.getElementById("para1");
-
 let para2 = document.getElementById("para2");
+let underLine = document.querySelector(".undeline");
 para2.style.display = "none";
-
-// console.log(h3);
 h3.innerText = "Sign Up";
 signUp.classList.add("bgClr");
 function signUpbtn() {
@@ -24,6 +22,7 @@ function signUpbtn() {
     // console.log("ddd", nameInput);
     nameInput.style.display = "block";
     console.log(para1);
+    underLine.style.transform = "translateX(5px)";
   }
 }
 function signInbtn() {
@@ -39,4 +38,5 @@ function signInbtn() {
   //   console.log("aaa", nameInput);
   nameInput.style.display = "none";
   //   console.log(h3);
+  underLine.style.transform = "translateX(35px)";
 }
